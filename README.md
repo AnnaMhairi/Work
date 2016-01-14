@@ -28,7 +28,7 @@ Here are a few of the projects and features I have worked on individually or on 
 
   * Mavenlink product support:
 
-    - Implemented a fix to prevent 'read-only' users from replying to a post email.
+    - Implemented a fix to prevent 'read-only' users from replying to a post email. This fix added a forgotten permission check to a conditional in our mailer.
 
     ![Support 1](/../Support-1.png)
 
