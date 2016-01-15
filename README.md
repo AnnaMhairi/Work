@@ -2,21 +2,22 @@
 
 Here are a few of the projects and features I have worked on individually or on teams at Mavenlink.
 
-- [Marketing site](https://www.mavenlink.com)
+##Mavenlink product support:
 
-  * Home page redesign:
+ * Implemented a fix to prevent 'read-only' users from replying to a post email. This fix added a forgotten permission check  to a conditional in our mailer.
 
-    ![Mavenlink Homepage](/../Mavenlink-Homepage.png)
+ ![Support 1]
+ (/Support-2.png)
 
-  * Pricing page redesign:
+ * Fixed default permission levels for 'Resources' on project create via template.
 
-    ![Mavenlink Pricing Page](/../pricing.png)
+ * Fixed a bug where, on project creation via applying a template, the user would be redirected to the project home page. The fix for this required passing data through multiple Backbone.Marionette templates.
 
-  * AB testing using Optimizely to determine the most successful of three pricing page variants.
+##[Marketing site](https://www.mavenlink.com)
 
-  * Jobvite Integration:
+  * ######JOBVITE INTEGRATION:
 
-    Replaced our current manual via admin panel career creation, and replaced with a Jobvite integration. This integration works by calling the Jobvite API, and syncing the response with our local database.
+    Replaced our current manual via admin panel career creation, and replaced with a Jobvite integration. This integration  works by calling the Jobvite API, and syncing the response with our local database.
 
     Key files and architecture:
 
@@ -26,13 +27,17 @@ Here are a few of the projects and features I have worked on individually or on 
       - admin.js: on click of 'sync jobs' button in admin panel, hits admin/homes/sync action.
       - homes_controller.rb: #sync calls Jobvite.run and rescues if there is an error.
 
-  * Mavenlink product support:
+  * ######HOME PAGE REDESIGN:
 
-    - Implemented a fix to prevent 'read-only' users from replying to a post email. This fix added a forgotten permission check to a conditional in our mailer.
+    ![Mavenlink Homepage]
+    (/Mavenlink-Homepage.png)
 
-    ![Support 1](/../Support-2.png)
+  * ######PRICING PAGE REDESIGN:
 
-    - Fixed default permission levels for 'Resources' on project create via template.
 
-    - Fixed a bug where, on project creation via applying a template, the user would be redirected to the project home page. The fix for this required passing data through multiple Backbone.Marionette templates.
+    ![Mavenlink Pricing Page]
+    (/pricing.png)
 
+  * ######AB TESTING:
+    
+   Using Optimizely to determine the most successful of three pricing page variants.
