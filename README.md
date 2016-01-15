@@ -30,7 +30,7 @@ Here are a few of the projects and features I have worked on individually or on 
 
     - Implemented a fix to prevent 'read-only' users from replying to a post email. This fix added a forgotten permission check to a conditional in our mailer.
 
-    ![Support 1](/../Support-1.png)
+    ![Support 1](/../Support-2.png)
 
     - Fixed default permission levels for 'Resources' on project create via template.
 
